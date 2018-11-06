@@ -1,7 +1,7 @@
 FROM python:alpine
 
 # Metadata params
-ARG VERSION=0.1.0
+ARG VERSION=0.1.1
 
 # Metadata
 LABEL maintainer="Mikhail Konyakhin <m.konyahin@gmail.com>" \
@@ -18,6 +18,6 @@ COPY gricleaner.py /
 
 RUN pip install --upgrade -r requirements.txt
 
-ENTRYPOINT ["./gricleaner.py"]
+ENTRYPOINT ["/gricleaner.py"]
 
 CMD ["-h"]
