@@ -1,5 +1,7 @@
 # Gitlab registry images cleaner
 
+### CLI
+
 ```
 usage: gricleaner.py [-h] [-i FILE] [-j URL] [-u NAME] [-p SECRET] [-g URL]
                      [-r namespace/project] [-t SNAPSHOT] [-m X] [-d X]
@@ -29,4 +31,11 @@ optional arguments:
   --debug               debug output
 
 To work requires settings in the INI file or environment variables
+```
+
+### Docker 
+
+```
+docker run --rm -it sportsru/gric:latest 
+
 ```
