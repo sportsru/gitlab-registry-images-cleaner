@@ -1,7 +1,7 @@
 FROM python:alpine
 
 # Metadata params
-ARG VERSION=0.1.1
+ARG VERSION=0.1.2
 
 # Metadata
 LABEL maintainer="Mikhail Konyakhin <m.konyahin@gmail.com>" \
