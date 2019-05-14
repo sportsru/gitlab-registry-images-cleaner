@@ -42,7 +42,7 @@ class GitlabRegistryClient(object):
 
     def get_catalog(self):
         """Return catalog of repositories from registry"""
-        return self.get_json("/v2/_catalog", "registry:catalog")["repositories"]
+        return self.get_json("/v2/_catalog?n=10000", "registry:catalog")["repositories"]
 
     def get_tags(self, repo):
         """Return tags of repository from registry"""
